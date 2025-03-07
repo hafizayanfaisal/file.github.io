@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/feedbackform.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="header">
+
+        </div>
+        <div class="row " id="ayan ">
+                <div class="col">
+                    <h3>feedback form</h3>
+                </div>
+            </div>
+        <div class="container" id="ali">
+            
+                    <div class="row mt-4" >
+            <div class="colcol-lg-2 col-md-2 col-sm-12"></div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <form id="myForm" onsubmit="return validateForm()">
+                    <label for="name" class="form-label">Enter your name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <br>
+                
+                    <label for="fatherName" class="form-label">Enter your father's name</label>
+                    <input type="text" class="form-control" id="fatherName" placeholder="Enter your father's name" required>
+                    <br>
+                
+                    <label for="email" class="form-label">Enter your email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <br>
+                
+                    <label for="password" class="form-label">Enter your password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    <br>
+                
+                    <label for="feedback" class="form-label">Enter your feedback</label>
+                    <textarea class="form-control" id="feedback" placeholder="Enter your feedback" required></textarea>
+                    <br>
+                
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                
+                <script>
+                    function validateForm() {
+                        // Get the form values
+                        var name = document.getElementById('name').value;
+                        var fatherName = document.getElementById('fatherName').value;
+                        var email = document.getElementById('email').value;
+                        var password = document.getElementById('password').value;
+                        var feedback = document.getElementById('feedback').value;
+                
+                        // Regular expressions for validation
+                        var namePattern = /^[A-Za-z ]+$/; // Only letters and spaces allowed for name
+                
+                        // Name validation: check if it contains only letters and spaces
+                        if (name === "") {
+                            alert("Name must be filled out.");
+                            return false;
+                        } else if (!name.match(namePattern)) {
+                            alert("Name must contain only letters and spaces.");
+                            return false;
+                        }
+                
+                        // Father's name validation: ensure it's not empty
+                        if (fatherName === "") {
+                            alert("Father's name must be filled out.");
+                            return false;
+                        }
+                
+                        // Email validation: ensure the email is in the correct format
+                        if (email === "") {
+                            alert("Email must be filled out.");
+                            return false;
+                        } else if (!email.match(emailPattern)) {
+                            alert("Please enter a valid email address.");
+                            return false;
+                        }
+                
+                        // Password validation: check if password has at least 6 characters
+                        if (password === "") {
+                            alert("Password must be filled out.");
+                            return false;
+                        } else if (password.length < 6) {
+                            alert("Password must be at least 6 characters long.");
+                            return false;
+                        }
+                
+                        // Feedback validation: ensure feedback is not empty
+                        if (feedback === "") {
+                            alert("Feedback must be filled out.");
+                            return false;
+                        }
+                
+                        // If all fields are valid, allow form submission
+                        alert("Form submitted successfully!");
+                        return true;
+                    }
+                </script>
+                
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <footer class="footer">
+          <div class="footer-container">
+              <div class="footer-section">
+                  <h3>About Us</h3>
+                 <p>We take pride in offering premium craftsmanship, sustainable materials, and a seamless shopping experience. Explore our collection and find your perfect bag today!</p>
+              </div>
+              <div class="footer-section">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="backpack.html">backpack</a></li>
+                    <li><a href="sling.html">sling bags</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="feedback form.html">feedback from</a></li>
+                  </ul>
+              </div>
+              </div>
+          </div>
+        </footer>
+    
+</div>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

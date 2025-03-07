@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row" id="header">
+
+    </div>
+   
+      <div class="row">
+        <div class="col">
+          <h3>contact form</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 contactvideo" style="height: 100vh;">
+          <video id="formvideo" src="assets/videos/4994770-hd_1920_1080_25fps.mp4" loop muted autoplay style="width: 100%; height: 100%; object-fit: cover;"></video>
+        </div>
+        
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <form id="myForm" onsubmit="return validateForm()">
+            <label for="name" class="form-label">Enter your name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <br>
+        
+            <label for="fatherName" class="form-label">Enter your father's name</label>
+            <input type="text" class="form-control" id="fatherName" placeholder="Enter your father's name" required>
+            <br>
+        
+            <label for="email" class="form-label">Enter your email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            <br>
+        
+            <label for="password" class="form-label">Enter your password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            <br>
+        
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        <script>
+            function validateForm() {
+                var name = document.getElementById('name').value;
+                var fatherName = document.getElementById('fatherName').value;
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                var namePattern = /^[A-Za-z ]+$/;
+                var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        
+                if (name === "") {
+                    alert("Name must be filled out.");
+                    return false;
+                } else if (!name.match(namePattern)) {
+                    alert("Name must contain only letters and spaces.");
+                    return false;
+                }
+        
+                if (fatherName === "") {
+                    alert("Father's name must be filled out.");
+                    return false;
+                }
+        
+                if (email === "") {
+                    alert("Email must be filled out.");
+                    return false;
+                } else if (!email.match(emailPattern)) {
+                    alert("Please enter a valid email address.");
+                    return false;
+                }
+        
+                if (password === "") {
+                    alert("Password must be filled out.");
+                    return false;
+                } else if (password.length < 6) {
+                    alert("Password must be at least 6 characters long.");
+                    return false;
+                }
+        
+                // Show thank you message as alert
+                alert("Thank you for submitting your details!");
+        
+                // Prevent actual form submission (optional)
+                return false; // This keeps the page from refreshing
+            }
+        </script>
+          
+  </div>  
+  <div class="row mt-4">
+    <div class="col">
+      <h3>mall map</h3>
+    </div>
+  </div>
+
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231646.0665308595!2d66.94684222331131!3d24.88195221329015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33946cddd6315%3A0xd3be796ff4a62db5!2sMetro%20Group!5e0!3m2!1sen!2s!4v1737882525831!5m2!1sen!2s"
+  width="1250px" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <footer>
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-section">
+              <h3>About Us</h3>
+             <p>We take pride in offering premium craftsmanship, sustainable materials, and a seamless shopping experience. Explore our collection and find your perfect bag today!</p>
+          </div>
+          <div class="footer-section">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li><a href="backpack.html">backpack</a></li>
+                <li><a href="sling.html">sling bags</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="feedback form.html">feedback from</a></li>
+              </ul>
+          </div>
+          </div>
+      </div>
+    </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/nav.js"></script>
+</body>
+
+</html>

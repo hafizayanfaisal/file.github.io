@@ -1,0 +1,154 @@
+#ayan{
+    padding-top: 70px;
+
+}
+h2 img{
+    width: 260px;
+    height: 200px;
+}
+#afzal{
+    margin-left: 25px;
+}
+h4 img{
+    width: 300px;
+    height: 200px;
+} footer {
+    background-color: #070707;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+#ali{
+    color: #fff;
+    width: 990px;
+    margin-left: 1px;
+    text-align: center  ;
+    padding-top: 5px;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x800') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.hero{
+    background-color: #070707;
+}
+.btn {
+    background-color: #f8b400;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+   font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 30px;
+    text-transform: initial;
+    height: 30px;
+    
+}
+
+.btn:hover {
+    background-color: #e79b00;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.card {
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+h6 img{
+    width: 200px;
+    height: 200px;
+} 
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.footer {
+    height: 240px;
+    background-color: #0c0c0c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+.footer-section ul {
+    list-style: none;
+}
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+img{
+    width: 300px;
+    height: 250px;
+}
+#about{
+    background-color: #07070755;
+}
+#m{
+    text-align: center;
+    background-color: #070707;
+    color: aliceblue;
+    width: 960px;
+    margin-left: 5px;
+}
+#ali{
+    background-color: #070707;
+    color: aliceblue;
+    width: 960px;
+    margin-left: 15px;
+}
+.bag{
+    width: 100px;
+    height: 100px;
+}
+#mu{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+}
